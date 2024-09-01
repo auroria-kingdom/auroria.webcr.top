@@ -2,9 +2,3 @@
 from = "/*"
 to = "/404"
 status = 404
-
-[[redirects]]
-from = "/beta/enroll/success"
-to = "/beta/enroll/successful"
-status = 200
-force = true
