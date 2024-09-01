@@ -18,8 +18,6 @@
   },
   "homepage": "https://github.com/auroria-kingdom/auroria.webcr.top#readme",
   "dependencies": {
-    "dropzone": "^6.0.0-beta.2",
-    "lodash": "^4.17.21",
     "nodemailer": "^6.9.14",
     "preline": "^2.4.1"
   },
