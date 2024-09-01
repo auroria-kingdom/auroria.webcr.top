@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/auroria-kingdom/auroria.webcr.top#readme",
   "dependencies": {
-    "nodemailer": "^6.9.14",
     "preline": "^2.4.1"
   },
   "devDependencies": {

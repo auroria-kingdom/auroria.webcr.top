@@ -124,7 +124,14 @@
               Registration Form
             </h2>
 
-            <form name="beta-register" method="POST" netlify>
+            <form
+              name="beta-register"
+              method="POST"
+              enctype="multipart/form-data"
+              netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true"
+              netlify
+            >
               <div class="mt-6 grid gap-4 lg:gap-6">
                 <!-- Grid -->
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
@@ -570,6 +577,9 @@
                 </div>
               </div>
 
+              <input name="bot-field" hidden />
+              <br />
+              <div data-netlify-recaptcha="true"></div>
               <!-- End Grid -->
 
               <!-- Checkbox -->
@@ -616,7 +626,6 @@
       <!-- End Grid -->
     </div>
     <!-- End Beta Register -->
-    <script src="../assets/beta-register.js"></script>
     <script src="../../node_modules/preline/dist/preline.js"></script>
   </body>
 </html>
