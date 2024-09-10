@@ -124,14 +124,7 @@
               Registration Form
             </h2>
 
-            <form
-              name="beta-register"
-              action="./enroll/successful"
-              method="POST"
-              enctype="multipart/form-data"
-              data-netlify-recaptcha="true"
-              netlify
-            >
+            <form name="beta-register">
               <div class="mt-6 grid gap-4 lg:gap-6">
                 <!-- Grid -->
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
@@ -580,7 +573,7 @@
               </div>
 
               <br />
-              <div data-netlify-recaptcha="true"></div>
+              <div id="verify"></div>
               <!-- End Grid -->
 
               <!-- Checkbox -->
@@ -627,6 +620,12 @@
       <!-- End Grid -->
     </div>
     <!-- End Beta Register -->
+    <script src="../assets/register.js"></script>
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"
+      defer
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../../node_modules/preline/dist/preline.js"></script>
   </body>
 </html>
