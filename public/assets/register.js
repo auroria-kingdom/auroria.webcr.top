@@ -1,8 +1,5 @@
-document.getElementById("verify").innerHTML =
-  `<div class="cf-turnstile"data-sitekey=${process.env.TURNSTILE}></div>`;
-
 document
-  .getElementById("login-form")
+  .getElementById("beta-register")
   .addEventListener("submit", async function (event) {
     event.preventDefault();
 
